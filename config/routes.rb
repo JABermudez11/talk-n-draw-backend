@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :friends
+  resources :pendings
   resources :drawings
   resources :user_conversations
   resources :messages
   resources :conversations
-  resources :users, only: [:create, :index]
+  resources :users, only: [:create, :index, :show]
   # post '/signup', to: 'users#create'
   post '/auth', to: 'auth#create'
   get '/current_user', to: 'auth#show'

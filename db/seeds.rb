@@ -5,10 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Messages.destroy_all
+Message.destroy_all
+Pending.destroy_all
 UserConversation.destroy_all
 User.destroy_all
 
-5.times {
-    User.create!(username: Faker::Name.first_name)
-}
+u1 = User.create!(username: "john", password_digest: "foo")
+u2 = User.create!(username: "joh", password_digest: "foo")
+u3 = User.create!(username: "jo", password_digest: "foo")
