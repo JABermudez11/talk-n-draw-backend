@@ -14,8 +14,12 @@ class DrawingsController < ApplicationController
   end
 
   # POST /drawings
-  def create
+  def create    
+    @user = current_user()
+    params[:user_id] = @user.id
+    
     @drawing = Drawing.new(drawing_params)
+    # byebug
 
     if @drawing.save
       render json: @drawing, status: :created, location: @drawing
@@ -45,7 +49,8 @@ class DrawingsController < ApplicationController
     end
 
     # Only allow a trusted parameter "white list" through.
-    def drawing_params
-      params.require(:drawing).permit(:content, :user_id)
+    def drawing_params      
+      # params.require(:drawing).permit(:content, :user_id, :drawing)
+      params.permit(:content, :user_id, :drawing)
     end
 end

@@ -13,4 +13,6 @@ class User < ApplicationRecord
 
     has_many :friend_users, foreign_key: :owner_id, class_name: 'Friend'
     has_many :owners, through: :friend_users
+
+    
 end
