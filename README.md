@@ -1,7 +1,9 @@
-# README
+# Talk-n-Draw Back End
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Capstone project for Flatiron School 2020
+
+## What the App is About
+Full stack web application that allows users to create an account, and message other users and draw their own emojis to send and share.
 
 Things you may want to cover:
 
