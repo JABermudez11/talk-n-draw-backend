@@ -30,3 +30,10 @@ Full stack web application that allows users to create an account, and message o
 </ol>
 
 ## Setup
+After cloning the repo
+
+<ol>
+<li>cd into `talkNdraw-backend`</li>
+<li>`rails server`</li>
+<li>Go to `http://localhost:3000/`</li>
+</ol>
