@@ -12,8 +12,21 @@ Full stack web application that allows users to create an account, and message o
 <li>Action Cable</li>
 </ul>
 
+## Technologies Used in Front End
+[Link](https://github.com/JABermudez11/talk-n-draw-frontend) to Front End GitHub
+
+<ul>
+<li>React</li>
+<li>Redux</li>
+<li>p5.js</li>
+<li>HTML/CSS</li>
+<li>JSON Web token</li>
+</ul>
+
 ## How to use
 <ol>
 <li>rails server</li>
 <li>Go to "localhost:3000" to see the server</li>
 </ol>
+
+## Setup
